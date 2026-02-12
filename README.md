@@ -99,5 +99,5 @@ Then open the printed URL (usually `http://localhost:5173`).
    - `npm run dev`
 4. Open the frontend in the browser, select a symbol (e.g. `BTCUSDT`), and place testnet orders.
 
-> **Important**: This is for educational/testing purposes only. Use **testnet** API keys and do not trade real funds with this setup.
+> **Important**: This is for testing purposes only. Use **testnet** API keys and do not trade real funds with this setup.
 
