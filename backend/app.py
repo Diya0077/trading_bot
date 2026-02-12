@@ -18,13 +18,13 @@ client = BinanceFuturesClient()
 service = OrderService(client)
 
 
-# 🔹 Health check
+#  Health check
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"}), 200
 
 
-# 🔹 Get Price
+#  Get Price
 @app.route("/price/<symbol>", methods=["GET"])
 def get_price(symbol):
     symbol = symbol.upper()
@@ -32,7 +32,7 @@ def get_price(symbol):
     return jsonify({"symbol": symbol, "price": price})
 
 
-# 🔹 Place Order
+#  Place Order
 @app.route("/order", methods=["POST"])
 def place_order():
     data = request.get_json(silent=True) or {}
@@ -60,7 +60,7 @@ def place_order():
     return jsonify(result)
 
 
-# 🔹 Order History
+#  Order History
 @app.route("/orders", methods=["GET"])
 def order_history():
     symbol = request.args.get("symbol", "BTCUSDT").upper()

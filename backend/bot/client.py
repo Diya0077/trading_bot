@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 
 logger = logging.getLogger(__name__)
 
-# Load variables from a local .env file (if present) into the process
 load_dotenv()
 
 
@@ -21,10 +20,6 @@ class BinanceFuturesClient:
     """
 
     def __init__(self):
-        # Load credentials from environment variables.
-        # Recommended: put them in a local backend/.env file:
-        #   BINANCE_API_KEY=your_testnet_key
-        #   BINANCE_API_SECRET=your_testnet_secret
         api_key = os.getenv("BINANCE_API_KEY")
         api_secret = os.getenv("BINANCE_API_SECRET")
 
@@ -35,7 +30,6 @@ class BinanceFuturesClient:
             )
             raise RuntimeError("Binance API credentials not configured")
 
-        # Use testnet by default for safety
         self.client = Client(api_key, api_secret, testnet=True)
 
     def get_price(self, symbol):
