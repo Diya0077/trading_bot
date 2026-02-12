@@ -1,0 +1,12 @@
+2026-02-12 20:52:12,885 - trading_bot - INFO - Binance Client initialized successfully.
+2026-02-12 20:52:12,885 - trading_bot - INFO - Fetching account information...
+2026-02-12 20:52:13,639 - trading_bot - INFO - Account info fetched successfully.
+2026-02-12 20:52:45,154 - trading_bot - INFO - Binance Client initialized successfully.
+2026-02-12 20:52:48,819 - trading_bot - INFO - Placing order: BUY 0.001 BTCUSDT @ MARKET Market
+2026-02-12 20:52:49,449 - trading_bot - ERROR - Order placement failed (API): APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-12 20:53:51,878 - trading_bot - INFO - Binance Client initialized successfully.
+2026-02-12 20:53:53,851 - trading_bot - INFO - Placing order: BUY 0.02 BTCUSDT @ MARKET Market
+2026-02-12 20:53:54,613 - trading_bot - INFO - Order placed successfully: 12216668338
+2026-02-12 21:09:29,702 - trading_bot - INFO - Binance Client initialized successfully.
+2026-02-12 21:09:29,713 - trading_bot - INFO - Fetching account information...
+2026-02-12 21:09:30,462 - trading_bot - INFO - Account info fetched successfully.
